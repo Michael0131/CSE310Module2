@@ -31,8 +31,8 @@ public class WeatherReport extends WeatherService {
             String weatherDescription = extractWeatherDescription(weatherData);
 
             // Display the parsed weather data
-            System.out.printf("Location(%s): %s%n", locationType, location);
-            System.out.printf("Temperature: %.2f°F%n", temperatureInFahrenheit);
+            System.out.printf("Location (%s): %s%n", locationType, location);
+            System.out.printf("Temperature: %.2f°F (%s)%n", temperatureInFahrenheit, getTemperatureContext(temperatureInFahrenheit)); // Fixed
             System.out.printf("Humidity: %d%%%n", humidity);
             System.out.printf("Weather: %s%n", weatherDescription);
             System.out.printf("Sunset Time: %s%n", sunsetTime);
@@ -40,6 +40,19 @@ public class WeatherReport extends WeatherService {
         } catch (Exception e) {
             System.out.println("Error processing weather data: " + e.getMessage());
             e.printStackTrace();
+        }
+    }
+
+    // New method to provide context based on temperature
+    private String getTemperatureContext(double temperature) {
+        if (temperature < 32) {
+            return "Cold";
+        } else if (temperature >= 32 && temperature < 50) {
+            return "Cool";
+        } else if (temperature >= 50 && temperature < 70) {
+            return "Mild";
+        } else {
+            return "Warm";
         }
     }
 

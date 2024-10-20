@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "WeatherForecastApp\\src"
+    ],
+    "java.project.referencedLibraries": [
+        "WeatherForecastApp\\libs\\json-20210307.jar"
+    ]
+}

@@ -8,13 +8,13 @@ public class Main {
             System.out.println(); // This will add a blank line
             System.out.println(); // This will add a blank line
             System.out.print("Enter a Location - *Can be City or State* - Example: 'New York': ");
-            String location = scanner.nextLine();
+            String location = scanner.nextLine(); // Reads input stores as string "location"
 
             // Create an instance of WeatherReport and process the weather data
-            WeatherReport report = new WeatherReport();
+            WeatherReport report = new WeatherReport();  //Creates instance of WeatherReport
             report.processWeatherData(location);
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); //This is exeption handling - prints stack trace for debugging
         }
     }
 }

@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WeatherReport extends WeatherService {
+public class WeatherReport extends WeatherService { // defines WeatherReport -> Weatherservice
 
     @Override
     @SuppressWarnings("CallToPrintStackTrace")
@@ -77,7 +77,7 @@ public class WeatherReport extends WeatherService {
 
     // Convert Unix time to a human-readable format (hh:mm a)
     private String convertUnixToTime(long unixSeconds) {
-        java.util.Date date = new java.util.Date(unixSeconds * 1000L);
+        java.util.Date date = new java.util.Date(unixSeconds * 1000L); // seconds since epoch
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("hh:mm a"); // For 12-hour format
         sdf.setTimeZone(java.util.TimeZone.getDefault()); // Use default timezone
         return sdf.format(date);

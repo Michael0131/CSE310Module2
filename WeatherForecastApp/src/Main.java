@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             // Ask the user to enter a location
-            System.out.print("Enter a city name: ");
+            System.out.println(); // This will add a blank line
+            System.out.println(); // This will add a blank line
+            System.out.print("Enter a Location - *Can be City or State* - Example: 'New York': ");
             String location = scanner.nextLine();
 
             // Create an instance of WeatherReport and process the weather data

@@ -4,7 +4,7 @@ As a software engineer student, I am committed to enhancing my skills and knowle
 
 The primary goal of this software is to provide users with current weather conditions and forecasts based on their input location, whether it's a city or a state. Through this project, I aimed to learn about API integration, data parsing, and how to handle user input effectively in Java.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=zsKGHuYmAhk)
 
 # Development Environment
 
